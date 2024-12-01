@@ -1,0 +1,220 @@
+/* Home.css */
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #b2d0ee;
+  color: #333;
+}
+
+/* Container for the whole Home Page */
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.logout-btn,
+.login-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 13%;
+  margin-bottom: -3px;
+}
+
+.logout-btn:hover,
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Search & Filter */
+.search-filter-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.search-filter-row input,
+.search-filter-row select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 45%;
+}
+
+.search-filter-row input {
+  width: 60%;
+}
+
+.search-filter-row select {
+  width: 35%;
+}
+
+/* Add User Button */
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* User List */
+.user-list {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+td {
+  background-color: white;
+}
+
+td button {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+td button:hover {
+  background-color: #0056b3;
+}
+
+td button:active {
+  background-color: #003f7f;
+}
+
+td button.delete-btn {
+  background-color: #dc3545;
+}
+
+td button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+td button.edit-btn {
+  background-color: #ffc107;
+}
+
+td button.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Modals */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.modal input,
+.modal select,
+.modal button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.modal button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+.modal-close-btn {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.modal-close-btn:hover {
+  background-color: #c82333;
+}
